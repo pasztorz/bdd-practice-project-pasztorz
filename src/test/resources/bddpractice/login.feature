@@ -18,7 +18,7 @@ Feature: Login
       | bob@test.com  | TestBob1234    | Login failed      |
       | bobi@test.com | TestBob123     | Login failed      |
 
-  #Scenario: Login with not registered user
-    #Given Rob is an unregistered user
-    #When Rob logs in with new credentials
-    #Then Rob sees the failure message "Unregistered user"
+  Scenario: Login with not registered user
+    Given Rob is an unregistered user
+    When Rob logs in with new credentials
+    Then Rob sees the following message "Unregistered user"
