@@ -16,7 +16,7 @@ public class StepDefinitions {
 
   @Given("Bob is a registered user")
   public void bob_is_a_registered_user() {
-    /// BOB COULD BE PUT INTO A .env FILE ...
+    /// BOB COULD BE PUT INTO A .env FILE ... (???)
     registeredUser = new User("Bob", "bob@test.com", "TestBob123");
   }
 
